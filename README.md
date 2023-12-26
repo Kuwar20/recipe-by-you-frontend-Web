@@ -89,6 +89,8 @@ Folder Structure
 
 #### Frontend:
 * react-router-dom
+#### Backend:
+* Mongoose 
 
 
 ## Contributing
@@ -117,7 +119,7 @@ While I was the main developer of this MERN stack project, this project couldn't
 
 * 0.2
     * Various bug fixes and optimizations
-    * See [commit change](https://github.com/Kuwar20/Mern-frontend-P-3/commits/main/) 
+    * See [commit change](https://github.com/Kuwar20/Mern-frontend-P-1/commits/main/) 
 * 0.1
     * Initial Release
 
@@ -129,4 +131,5 @@ This project is licensed under the MIT License - see the LICENSE Tab for details
 
 Inspiration, code snippets, etc.
 * [React Documentation](https://react.dev/learn)
-* [React Protected Routes](https://www.youtube.com/watch?v=iM9G0lgXsc4)
+* [Express.js Documentation](https://expressjs.com/en/5x/api.html)
+* [Mongoose](https://mongoosejs.com/docs/)
