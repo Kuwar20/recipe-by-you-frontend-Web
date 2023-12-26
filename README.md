@@ -13,8 +13,7 @@
 Watch a video showcasing the project in action Locally : 
 
 
-https://github.com/Kuwar20/rdme/assets/66473902/93eb9951-a5fa-49cb-80db-306e7660e245
-
+https://github.com/Kuwar20/Mern-frontend-P-1/assets/66473902/5b05d307-ed88-46ad-b407-01f374c9f38f
 
 
 
