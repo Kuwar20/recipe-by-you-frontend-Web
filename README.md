@@ -83,6 +83,206 @@ Folder Structure
 |----|--------|------|-------|
 | client  | src | App.js | Entry point for Frontend
 
+# Endpoints - 5
+
+## 1- Register 
+<br>
+
+This HTTP POST request is used to register a user.
+
+```http
+POST /auth/register
+```
+### Request Body
+
+JSON Request body in the following format:
+
+``` json
+{
+    "username":"your_username",
+    "password":"your_password"
+}
+```
+### Request Body
+
+JSON Request body in the following format:
+
+``` json
+{
+   "User Created Successfully"
+}
+```
+--- 
+## 2- Login 
+<br>
+
+
+This HTTP POST request is used to register a specific user.
+
+```http
+POST /auth/login 
+```
+### Request Body
+
+JSON Request body in the following format:
+
+``` json
+{
+    "username":"your_username",
+    "password":"your_password"
+}
+```
+
+### Response
+
+- Status: 200
+
+``` json
+
+    "token": "Token_value",
+    "userID": "userID from DB"
+
+
+ ```
+---
+## 3- Save an Recipe 
+<br>
+
+This endpoint is used to Save a specific user's Recipe. The HTTP GET request should be sent to 
+
+```http
+GET  /recipes/{id}
+```
+
+### Request Body
+
+JSON Request body in the following format:
+
+``` text
+Not Required
+```
+
+### Response
+
+- Status: 200
+
+``` json
+{
+    "_id": "your_recipe_id",
+    "name": "White Chocolate Walnut Cookies",
+    "ingredients": [
+        "Butter",
+        "Light brown sugar and granulated white sugar",
+        "One large egg",
+        "Cinnamon and vanilla",
+        "White chocolate"
+    ],
+    "instructions": "Step by Step Process",
+    "imageUrl": "your_image_url.jpg",
+    "cookingTime": 30,
+    "userOwner": "your_user_id",
+    "__v": 0
+}
+
+
+ ```
+---
+## 4- All Recipe
+
+This endpoint is used to get Details of all recipes.
+
+```http
+GET  /recipes
+```
+### Request Body
+
+JSON Request body in the following format:
+
+
+``` json
+{
+  "No Body Required"
+}
+```
+
+### Response
+
+- Status: 200
+
+```json
+[
+    {
+        "_id": "example_recipe_id",
+        "name": "Delicious Pasta Bake",
+        "ingredients": [
+            "Your preferred pasta type",
+            "High-quality feta cheese",
+            "Fresh cherry tomatoes",
+            "Garlic cloves",
+            "Fresh basil leaves",
+            "Add more ingredients as needed"
+        ],
+        "cookingTime": 40,
+        "userOwner": "example_user_id",
+        "__v": 0
+    }
+]
+```
+---
+## 5- Saved Recipe 
+<br>
+
+This endpoint is designed to GET a saved a recipe
+
+
+```http
+GET  /recipes/savedRecipes/{id}
+```
+### Request Body
+
+JSON Request body in the following format:
+
+``` json
+{
+  "No Body Required"
+}
+```
+
+### Response
+
+- Status: 201
+
+```json
+{
+    "savedRecipes": [
+        {
+            "_id": "example_recipe_id",
+            "name": "Example Recipe",
+            "ingredients": [
+                "Ingredient A"
+            ],
+            "instructions": "Follow the instructions carefully",
+            "imageUrl": "Image URL",
+            "cookingTime": 20,
+            "userOwner": "example_user_id",
+            "__v": 0
+        }
+    ]
+}
+ ```
+
+---
+## Status Codes
+
+Recipe Book WebApp returns the following status codes in its API:
+
+| Status Code | Description |
+| :--- | :--- |
+| 200 | `OK` |
+| 201 | `CREATED` |
+| 400 | `BAD REQUEST` |
+| 404 | `NOT FOUND` |
+| 500 | `INTERNAL SERVER ERROR` |
 
 
 ## Dependencies used
