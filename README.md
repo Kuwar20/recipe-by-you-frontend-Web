@@ -62,23 +62,22 @@ Folder Structure
 
 ### Top-level directory layout
 
-    .
-    |
-    ├── client                   # React application source code
-    │   │ 
-    |   ├── public                      # Static assets and files served by the React application
-    │   │ 
-    │   ├── src                         # React components and assets
-    │        │ 
-    |        ├── components                   # Reusable React components
-    |        ├── hooks                        # Custom React hooks
-    |        ├── pages                        # Individual pages of the application
-    |        └── App.js                       # Main React application component
-    │   
-    │   
-    └── README.md                # Documentation providing an overview of the project and its structure
+    Mern-frontend-P-1
+            |
+            ├── client                   # React application source code
+            │       │ 
+            │       ├── public                      # Static assets and files served by the React application
+            │       │ 
+            │       ├── src                         # React components and assets
+            │           │ 
+            │           ├── components                   # Reusable React components
+            │           ├── hooks                        # Custom React hooks
+            │           ├── pages                        # Individual pages of the application
+            │           └── App.js                       # Main React application component
+            │   
+            │   
+            └── README.md                # Documentation providing an overview of the project and its structure
 
-    
 | Main | Folder | File Name | Details 
 |----|--------|------|-------|
 | client  | src | App.js | Entry point for Frontend
